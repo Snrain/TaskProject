@@ -52,7 +52,7 @@ function AdvanComponent(){
                 <p className={style.adesc}>{advanInfo.adesc}</p>
                     <div
                     style={{width:'100%'}}>
-                    <Carousel  dots={false}>
+                    <Carousel  dots={false} autoplay>
                     {list()}
                     </Carousel>
                     </div>

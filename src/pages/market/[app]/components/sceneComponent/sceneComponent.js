@@ -54,7 +54,7 @@ function SceneComponent() {
             <p className={style.sdesc}>{scenedesc}</p>
             
                 
-                    <Carousel  ref={sceneCarousel} dots={false}>
+                    <Carousel autoplay ref={sceneCarousel} dots={false}>
                     {list()}
 
                 </Carousel>
