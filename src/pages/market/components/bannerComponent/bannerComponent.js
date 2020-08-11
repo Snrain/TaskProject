@@ -22,7 +22,7 @@ function BannerComponent() {
         return (
           <div key={index}>
             <a href={item.link}>
-              <img src={item.image} alt="" height="550px" width="100%" />
+              <img src={item.image} alt="" height="350px" width="100%" />
             </a>
           </div>
         );

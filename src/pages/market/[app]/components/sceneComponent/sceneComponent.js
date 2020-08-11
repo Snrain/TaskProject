@@ -21,14 +21,9 @@ function SceneComponent() {
       setAdvanlist(res.data.advanInfo.advanlist)
       setScenedesc(res.data.advanInfo.scenedesc)
     })
-  })
+  }, [])
   let sceneCarousel = useRef(null);
-
-
-
   let carouselBtn = sceneCarousel?.current?.slick;
-
-
   let list = () => {
     let res = [];
     for (let l = 0; l < advanlist.length / 3; l++) {

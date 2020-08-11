@@ -17,6 +17,7 @@
   text-align: center;
   height: 62px;
   margin-bottom: 11px;
+  line-height: 62px;
 }
 
 .processBox>p {
@@ -42,13 +43,23 @@
 }
 
 .processBox ul li h2 {
+  display: inline;
   font-family: PingFangSC-Medium;
   font-size: 18px;
   color: #1D1D1F;
   transition: all 0.3s;
   font-weight: 600;
+}
+.iconH{
   margin-bottom: 20px;
-
+  position: relative;
+}
+.iconH span{
+  position: relative;
+  top: 50%;
+  font-size: 24px;
+  margin-right: 18px;
+  opacity :0.5;
 }
 
 .processBox ul li p {
@@ -59,9 +70,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
-  margin-bottom: 0px;
-
-
+  margin: 0 0 0 42px;
 }
 
 .processBox ul li.isSelect h2 {
@@ -71,8 +80,10 @@
 
 .processBox ul li.isSelect p {
   max-height: 110px;
-  ;
   margin-bottom: 20px;
+}
+.processBox ul li.isSelect span{
+  opacity: 1;
 }
 
 .allProcessBox {

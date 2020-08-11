@@ -2,13 +2,13 @@ import mockjs from 'mockjs'
 let Random = mockjs.Random
 
 
-var kinds = [1, 2, 3, 4, 5, 6, 7].map(x => Random.cword(2, 4))
+var kinds = [1, 2, 3, 4, 5, 6, 7,8,9,10].map(x => Random.cword(2, 4))
 
     var compInfo= {
         cname: Random.cword(4),
-        ckinddesc: Random.cword(8, 16),
+        ckinddesc: Random.cword(20, 30),
         cdesc: Random.cparagraph(1),
-        ckindlist: kinds.slice(0, Random.integer(3, 5)),
+        ckindlist: kinds,
     }
     let advanname;
     var advanInfo= {
@@ -72,8 +72,8 @@ export default {
         compInfo :{
             cname: Random.cword(4),
             ckinddesc: Random.cword(8, 16),
-            cdesc: Random.cparagraph(1),
-            ckindlist: kinds.slice(0, Random.integer(3, 5)),
+            cdesc: Random.cword(40, 50),
+            ckindlist: kinds.slice(0, Random.integer(7, 9)),
         }
     }),
     '/api/getProcessInfo': mockjs.mock({

@@ -14,6 +14,7 @@
     letter-spacing: 2.2px;
     text-align: center;
     height: 62px;
+    line-height: 62px;
 }
 
 .sdesc {
@@ -50,6 +51,7 @@
     height: 40px;
     font-weight: 500;
     margin-bottom: 20px;
+    line-height: 40px;
 }
 
 .sceneBox .oneScene p {

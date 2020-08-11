@@ -1,9 +1,8 @@
 .casesBox {
   width: 100%;
   background: #f4f5f7;
-  min-height: 780px;
-
-
+  min-height: 751px;
+  padding-top: 43px;
 }
 
 .casesTitle h1 {
@@ -12,7 +11,9 @@
   color: #1D1D1F;
   letter-spacing: 2.2px;
   text-align: center;
-  padding-top: 30px;
+  height: 62px;
+  line-height: 62px;
+  margin-bottom: 11px;
 }
 
 .casesTitle p {

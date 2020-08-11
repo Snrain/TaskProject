@@ -86,7 +86,7 @@ function CasesComponent() {
           {
             caseList.map((item, index) => {
               let appList = item.appList;
-             
+
               return <Col span={7} offset={1} className={style.appCard} key={index}>
                 <div className={style.coverDiv}>
                   <img src={item.img} alt="" className={style.imgSize} />
@@ -97,29 +97,29 @@ function CasesComponent() {
 
                 </div>
                 <div className={style.outCardBody}>
-                <div className={style.cardBody}>
-                  <div className={style.appText}>
-                    <h2>{item.title}</h2>
-                    <p className={style.pSTyle}>{item.content}</p>
-                  </div>
-                  <div className={style.appIconBox}>
-                    {
-                      appList.map((item1, index1) => {
-                        return <Popover content={item1.appAlt} key={index1}>
-                          <span className={style.appList} key={index1}>
-                            <img src={item1.appImg} alt={item1.appAlt} />
-                          </span>
-                        </Popover>
-                      })
-                    }
-                    
+                  <div className={style.cardBody}>
+                    <div className={style.appText}>
+                      <h2>{item.title}</h2>
+                      <p className={style.pSTyle}>{item.content}</p>
+                    </div>
+                    <div className={style.appIconBox}>
+                      {
+                        appList.map((item1, index1) => {
+                          return <Popover content={item1.appAlt} key={index1}>
+                            <span className={style.appList} key={index1}>
+                              <img src={item1.appImg} alt={item1.appAlt} />
+                            </span>
+                          </Popover>
+                        })
+                      }
+
+                    </div>
                   </div>
                 </div>
-                </div>
-                
+
               </Col>
             })
-            
+
           }
         </Row>
       </Col>

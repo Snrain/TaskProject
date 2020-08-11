@@ -9,11 +9,10 @@ import SceneComponent from './components/sceneComponent/sceneComponent';
 export default () => {
   return (
     <div>
-      <NameComponent/>
-      <AdvanComponent/>
-      <SceneComponent/>
-      <ProcessComponent/>
-      
+      <NameComponent />
+      <AdvanComponent />
+      <SceneComponent />
+      <ProcessComponent />
     </div>
   );
 }

@@ -1,3 +1,8 @@
+.partners{
+  width: 100%;
+  min-height: 422px;
+  padding-top: 50px;
+}
 .partnersTitle{
     text-align: center;
 }
@@ -7,7 +12,9 @@
     color: #1D1D1F;
     letter-spacing: 2.2px;
     text-align: center;
-    padding-top: 30px;
+    height: 62px;
+    line-height: 62px;
+    margin-bottom: 50px;
 }
 .partnersBox{
     position: relative;
@@ -15,7 +22,7 @@
     height: 100px;
     overflow: hidden;
     float: left;
-    margin: 20px 20px;
+    margin: 0 20px;
     
 }
 .partnersContent{

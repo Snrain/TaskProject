@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from 'react'
 import style from './processComponent.module.css'
 import axios from 'axios';
 import { Carousel } from 'antd';
+import { AntDesignOutlined } from '@ant-design/icons';
+
 
 function ProcessComponent(props) {
 
@@ -18,13 +20,10 @@ function ProcessComponent(props) {
 
   useEffect(() => {
     axios.get('/api/getProcessInfo').then((res) => {
-
       setPdesc(res.data.processInfo.pdesc)
       setProcesslist(res.data.processInfo.processlist)
-
-
     })
-  })
+  }, [])
   let phoneimg = useRef(null);
   let mouseIsHover = (index) => {
     if (num != index) {
@@ -45,7 +44,7 @@ function ProcessComponent(props) {
                 onMouseEnter={() => mouseIsHover(index)}
                 className={`${num === index ? style.isSelect : ''}`}
               >
-                <h2>{item.processname}</h2>
+                <div className={style.iconH}><AntDesignOutlined /><h2>{item.processname}</h2></div>
                 <p>{item.processdesc}</p>
               </li>
             })
